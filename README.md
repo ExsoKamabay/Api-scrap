@@ -41,7 +41,10 @@ print(DlanDroid().dlandroid("free fire"));<br>
 print(Gamemod().gamemod("free fire"));<br>
 print(A2zapk().a2zapk("free fire"));<br>
 print(Rexdl().rexdl("free fire"));<br>
-print(Google().google_search_query("free fire",lang="id",maxSearch=10));<br>
+print(Google().google_search_query("free fire",lang="id",maxSearch=10));<br><br>
+- take a specific value<br>
+classname().methodname(query)[value]
+
 
     
  
