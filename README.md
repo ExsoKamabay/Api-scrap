@@ -28,7 +28,7 @@
       Class : Warna() - Method : color[value] -> str - red,cyan,magenta,green,blue,yellow <br><h4></strong>
 - call the class method<br>from scrap import *<br><br>
 - displays results<br><br>
-wrna = Warna().warna;<br>
+wrna = Warna().color;<br>
 print(wrna["red"]+"RED"+wrna["cyan"]+"CYAN");<br>
 print(wrna["green"]+"GREEN"+wrna["magenta"]+"MAGENTA");<br>
 print(wrna["yellow"]+"YELLOW"+wrna["blue"]+"BLUE");<br>
@@ -39,7 +39,7 @@ print(OceanOfGame().oceanofgame("free fire"));<br>
 print(Uptodown().uptodown("free fire","id"));<br>
 print(DlanDroid().dlandroid("free fire"));<br>
 print(Gamemod().gamemod("free fire"));<br>
-print(A2zapk().az2apk("free fire"));<br>
+print(A2zapk().a2zapk("free fire"));<br>
 print(Rexdl().rexdl("free fire"));<br>
 print(Google().google_search_query("free fire",lang="id",maxSearch=10));<br>
 
