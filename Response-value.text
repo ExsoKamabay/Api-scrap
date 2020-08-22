@@ -1,0 +1,176 @@
+NUM - list number 
+STR - list string
+
+Happymod :
+{"happymod_search_apps":
+    {
+        "urls":[str], 
+        "title":[str],
+        "ratting":[num],
+        "img":[str],
+        },
+    };
+
+Uptodown :
+    {
+    "uptodown_search_apps":{
+        "urls":[str],
+        "title":[str],
+        "ratting":[num],
+        "img":[str],
+        "decsription":[str],
+        "version":[num],
+        "download":[num],
+        "name_package":[str],
+        },
+    };
+
+Dlandroid :
+{
+    "dlandroid_search_apps":{
+        "urls":[str],
+        "decsription":[str],
+        "title":[str],
+        "img":[str],
+        },
+    };
+
+Gamemod :
+{
+    "gamemod_search_apps":{
+        "urls":[str],
+        "img":[str],
+        "title":[str],
+        "update":[num],
+        },
+     };
+
+Rexdl :
+{
+    "rexdl_search_apps":{
+        "urls":[str],
+        "img":[str],
+        "title":[str],
+        "update":[num],
+        "decsription":[str],
+        },
+    };
+
+A2zapk ;
+{
+    "a2zapk_search_apps":{
+        "urls":[str],
+        "img":[str],
+        "title":[str],
+        "update":[num],
+        "version":[num]
+        },
+    };
+Google ;
+{
+    "google_search_query":{
+        "urls":[str],
+        "title":[str]
+        },
+    };
+Github :
+{
+    "total_results":[],
+        "page1":{
+            "urls_h":[str], -> url home-page
+            "urls_d":[str],    -> url download
+            "like":[num],
+            "update":[num],
+            "languange":[str],
+        },
+        "page2":{
+            "urls_h":[str],
+            "urls_d":[str],
+            "like":[num],
+            "update":[num],
+            "languange":[str],
+        },
+        "page3":{
+            "urls_h":[str],
+            "urls_d":[str],
+            "like":[num],
+            "update":[num],
+            "languange":[str],
+        },
+        "page4":{
+            "urls_h":[str],
+            "urls_d":[str],
+            "like":[num],
+            "update":[num],
+            "languange":[str],
+        },
+        "page5":{
+            "urls_h":[str],
+            "urls_d":[str],
+            "like":[num],
+            "update":[num],
+            "languange":[str],
+        },
+    };
+
+OceanOfGame :
+{
+    "oceanofgame_search_game":{
+        "results":[num],
+        "page1":{
+            "urls":[str],
+            "title":[str],
+            "img":[str],
+            "update":[num],
+            "sysi":[str],
+                },
+        "page2":{
+            "urls":[str],
+            "title":[str],
+            "img":[str],
+            "update":[num],
+            "sysi":[str],
+                },
+        "page3":{
+            "urls":[str],
+            "title":[str],
+            "img":[str],
+            "update":[num],
+            "sysi":[str],
+                },
+        "page4":{
+            "urls":[str],
+            "title":[str],
+            "img":[str],
+            "update":[num],
+            "sysi":[str],
+                },
+        "page5":{
+            "urls":[str],
+            "title":[str],
+            "img":[str],
+            "update":[num],
+            "sysi":[str],
+                },
+            },
+        };
+
+SourceForge :
+{
+    "sourceforge_search_exe":{
+        "page_1":{
+            "url":[str],
+            "title":[str],
+            "subtitle":[str],
+            "last_update":[num],
+            "decsription":[str],
+            },
+        "page_2":{
+            "url":[str],
+            "title":[str],
+            "subtitle":[str],
+            "last_update":[num],
+            "decsription":[str],
+            },  
+        },
+    };
