@@ -39,7 +39,7 @@ print(OceanOfGame().oceanofgame("free fire"));<br>
 print(Uptodown().uptodown("free fire","id"));<br>
 print(DlanDroid().dlandroid("free fire"));<br>
 print(Gamemod().gamemod("free fire"));<br>
-print(Az2apk().az2apk("free fire"));<br>
+print(A2zapk().az2apk("free fire"));<br>
 print(Rexdl().rexdl("free fire"));<br>
 print(Google().google_search_query("free fire",lang="id",maxSearch=10));<br>
 
