@@ -26,4 +26,3 @@
       Class : Rexdl() - Method : rexdl(query) -> str <br>
       Class : Google() - Method : google_search_query(query,lang,maxSearch,kwargs) -> str -> int -> opt <br>
       Class : Warna() - Method : color[value] -> str - red,cyan,magenta,green,blue,yellow <br><h4></strong>
-  
