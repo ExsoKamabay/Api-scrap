@@ -42,6 +42,8 @@ print(Gamemod().gamemod("free fire"));<br>
 print(A2zapk().a2zapk("free fire"));<br>
 print(Rexdl().rexdl("free fire"));<br>
 print(Google().google_search_query("free fire",lang="id",maxSearch=10));<br><br>
+
+- classname().methodname(query) -> return json
 - take a specific value<br>
 classname().methodname(query)[value]<br><br> Mail : lexyong66@gmail.com;
 
