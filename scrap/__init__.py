@@ -6,7 +6,9 @@ except:
     from os import name,system
     if name == "nt":
         system("pip install bs4");
+        system("pip install google");
         system("pip install requests");
     else:
         system("pip3 install bs4");
+        system("pip3 install google");
         system("pip3 install requests");
