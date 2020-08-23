@@ -47,5 +47,4 @@ print(Google().google_search_query("free fire",lang="id",maxSearch=10));<br><br>
 - take a specific <a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/Response-value.text">value</a><br>
 classname().methodname(query)[<a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/Response-value.text">value</a>]<br><br> Mail : lexyong66@gmail.com;
 
-<h1 style="color:red;">style</h1>
  
