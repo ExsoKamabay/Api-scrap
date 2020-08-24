@@ -149,3 +149,9 @@ class OceanOfGame:
             dt["oceanofgame_search_game"]["page4"]["update"].append(update4.text.strip());
             dt["oceanofgame_search_game"]["page5"]["update"].append(update5.text.strip());
         ocfg = json.dumps(dt,indent=3,sort_keys=True);return json.loads(ocfg);
+class IpWhois:
+    def ipwhois(self,query):
+        setattr(self,"url","https://ipwhois.app/json/%s");
+        setattr(self,"req",requests.get(getattr(self,"url")%(query)));
+        setattr(self,"res",getattr(self,"req").json());
+        return getattr(self,"res");
