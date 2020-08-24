@@ -1884,3 +1884,35 @@ ship and crew and choose what skills you improve in order to survive dangerous e
           "465 repository results"
      ]
 }
+IpWhois :
+{
+ "asn": "AS15169",
+ "city": "Mumbai",
+ "completed_requests": 4,
+ "continent": "Asia",
+ "continent_code": "AS",
+ "country": "India",
+ "country_capital": "New Delhi",
+ "country_code": "IN",
+ "country_flag": "https://cdn.ipwhois.io/flags/in.svg",
+ "country_neighbours": "CN,NP,MM,BT,PK,BD",
+ "country_phone": "+91",
+ "currency": "Indian Rupee",
+ "currency_code": "INR",
+ "currency_plural": "Indian rupees",
+ "currency_rates": "74.8825",
+ "currency_symbol": "\u20b9",
+ "ip": "2404:6800:4001:80c::200e",
+ "isp": "Google LLC",
+ "latitude": "19.0759837",
+ "longitude": "72.8776559",
+ "org": "Google LLC",
+ "region": "Maharashtra",
+ "success": true,
+ "timezone": "Asia/Calcutta",
+ "timezone_dstOffset": "0",
+ "timezone_gmt": "GMT +5:30",
+ "timezone_gmtOffset": "19800",
+ "timezone_name": "India Standard Time",
+ "type": "IPv6"
+}
