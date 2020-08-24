@@ -13,6 +13,7 @@
   <li>GameMod</li>
   <li>Rexdl</li>
   <li>A2zapk</li>
+  <li>IpWhois</li>
 </ul>
 <strong><h3>start using</h3>
   <h4>Class : Github_search_enggine() - Method : search_github(query) - str<br>
@@ -24,6 +25,7 @@
       Class : Gamemod() - Method : gamemod(query) -> str <br>
       Class : A2zapk() - Method : a2zapk(query) -> str <br>
       Class : Rexdl() - Method : rexdl(query) -> str <br>
+      Class : IpWhois() - Method : ipwhois(query) -> ip str <br>
       Class : Google() - Method : google_search_query(query,lang,maxSearch,kwargs) -> str -> int -> opt <br>
       Class : Warna() - Method : color[value] -> str - red,cyan,magenta,green,blue,yellow <br><h4></strong>
 #call the class method<br>from scrap import *<br><br>
@@ -41,6 +43,7 @@ print(DlanDroid().dlandroid("free fire"));<br>
 print(Gamemod().gamemod("free fire"));<br>
 print(A2zapk().a2zapk("free fire"));<br>
 print(Rexdl().rexdl("free fire"));<br>
+print(IpWhois().ipwhois("2404:6800:4001:806::200e"));<br>
 print(Google().google_search_query("free fire",lang="id",maxSearch=10));<br><br>
 
 - classname().methodname(query) -> <a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/example-response.txt">return json</a>
