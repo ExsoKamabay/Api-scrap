@@ -29,7 +29,7 @@
       Class : IpWhois() - Method : ipwhois(query) -> ip str <br>
       Class : Google() - Method : google_search_query(query,lang,maxSearch,kwargs) -> str -> int -> opt <br>
       Class : picSearch() - Method : picsearch_pages1(query),picsearch_pages2345(query),picSearch_All(query) ->  str <br>
-      <p><strong>Note   :   The picsearch_pages1 () method searches only the main page section, while the picsearch_pages2345 () method searches pages 2,3,4,5 this method may be a little slower, whereas the picSearch_All () method will search these 5 pages 1,2,3,4,5 will be slower than the picsearch_pages1 () and picsearch_pages2345 () methods</strong></p>
+      <p><strong>Note   :   The picsearch_pages1(); method searches only the main page section, while the picsearch_pages2345(); method searches pages 2,3,4,5 this method may be a little slower, whereas the picSearch_All () method will search these 5 pages 1,2,3,4,5 will be slower than the picsearch_pages1(); and picsearch_pages2345(); methods</strong></p>
       Class : Warna() - Method : color[value] -> str - red,cyan,magenta,green,blue,yellow <br><h4></strong>
 #call the class method<br>from scrap import *<br><br>
 #displays results<br><br>
@@ -47,6 +47,9 @@ print(Gamemod().gamemod("free fire"));<br>
 print(A2zapk().a2zapk("free fire"));<br>
 print(Rexdl().rexdl("free fire"));<br>
 print(IpWhois().ipwhois("2404:6800:4001:806::200e"));<br>
+print(picSearch().picsearch_pages1("bird parrot"));<br>
+print(picSearch().picsearch_pages2345("bird parrot"));<br>
+print(picSearch().picSearch_All("bird parrot"));<br>
 print(Google().google_search_query("free fire",lang="id",maxSearch=10));<br><br>
 
 - classname().methodname(query) -> <a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/example-response.txt">return json</a>
