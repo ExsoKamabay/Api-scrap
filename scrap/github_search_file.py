@@ -131,7 +131,7 @@ class picSearch:
             soup = BeautifulSoup(site,"html.parser");
             for sites in soup.findAll("div",{"class":"detail-links"}):
                 dt["searchImage"]["page1"]["sites"].append(sites.a["href"]);
-        dmp = json.dumps(dt,indent=2,sort_keys=True);return json.dumps(dmp);
+        dmp = json.dumps(dt,indent=2,sort_keys=True);return json.loads(dmp);
     def picSearch_pages2345(self,query):
         dt = {
             "searchImage":{
@@ -190,7 +190,7 @@ class picSearch:
                 dt["searchImage"]["page3"]["sites"].append(sites3.a["href"]);
                 dt["searchImage"]["page4"]["sites"].append(sites4.a["href"]);
                 dt["searchImage"]["page5"]["sites"].append(sites5.a["href"]);
-        dmp = json.dumps(dt,indent=2,sort_keys=True);return json.dumps(dmp);
+        dmp = json.dumps(dt,indent=2,sort_keys=True);return json.loads(dmp);
     def picSearch_All(self,query):
         return self.picsearch_pages1(query);
         return self.picSearch_pages2345(query);
