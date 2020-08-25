@@ -104,3 +104,93 @@ class Github_search_enggine:
             dt["page4"]["update"].append(update4["datetime"]);
             dt["page5"]["update"].append(update4["datetime"]);
         gthb = json.dumps(dt,indent=5,sort_keys=True);return json.loads(gthb);
+    
+class picSearch:
+    def __init__(self):
+        setattr(self,"Upage",["http://www.picsearch.com/index.cgi?q=%s",
+        "http://www.picsearch.com/index.cgi?start=31&q=%s",
+        "http://www.picsearch.com/index.cgi?start=61&q=%s",
+        "http://www.picsearch.com/index.cgi?start=90&q=%s",
+        "http://www.picsearch.com/index.cgi?start=117&q=%s"]);
+    def picsearch_pages1(self,query):
+        dt={
+            "searchImage":{
+                "page1":{
+                    "sites":[],
+                    "images":[],
+                },
+            },
+        };
+        setattr(self,"query",query.replace(" ","+"));
+        setattr(self,"set_query1",getattr(self,"Upage")[0]%(getattr(self,"query")));
+        setattr(self,"setReques1",requests.get(getattr(self,"set_query1")).content);
+        setattr(self,"soup1",BeautifulSoup(getattr(self,"setReques1"),"html.parser"));
+        for u1_img in getattr(self,"soup1").findAll("span",{"class","result"}):
+            dt["searchImage"]["page1"]["images"].append("https:"+u1_img.img["src"]);
+            site = requests.get(u1_img.a["href"]).content;
+            soup = BeautifulSoup(site,"html.parser");
+            for sites in soup.findAll("div",{"class":"detail-links"}):
+                dt["searchImage"]["page1"]["sites"].append(sites.a["href"]);
+        dmp = json.dumps(dt,indent=2,sort_keys=True);return json.dumps(dmp);
+    def picSearch_pages2345(self,query):
+        dt = {
+            "searchImage":{
+                "page2":{
+                    "sites":[],
+                    "images":[],
+                },
+                "page3":{
+                    "sites":[],
+                    "images":[],
+                },
+                "page4":{
+                    "sites":[],
+                    "images":[],
+                },
+                "page5":{
+                    "sites":[],
+                    "images":[],
+                },
+            },
+        };
+        setattr(self,"query",query.replace(" ","+"));
+        setattr(self,"set_query2",getattr(self,"Upage")[1]%(getattr(self,"query")));
+        setattr(self,"set_query3",getattr(self,"Upage")[2]%(getattr(self,"query")));
+        setattr(self,"set_query4",getattr(self,"Upage")[3]%(getattr(self,"query")));
+        setattr(self,"set_query5",getattr(self,"Upage")[4]%(getattr(self,"query")));
+        setattr(self,"setReques2",requests.get(getattr(self,"set_query2")).content);
+        setattr(self,"setReques3",requests.get(getattr(self,"set_query3")).content);
+        setattr(self,"setReques4",requests.get(getattr(self,"set_query4")).content);
+        setattr(self,"setReques5",requests.get(getattr(self,"set_query5")).content);
+        setattr(self,"soup2",BeautifulSoup(getattr(self,"setReques2"),"html.parser"));
+        setattr(self,"soup3",BeautifulSoup(getattr(self,"setReques3"),"html.parser"));
+        setattr(self,"soup4",BeautifulSoup(getattr(self,"setReques4"),"html.parser"));
+        setattr(self,"soup5",BeautifulSoup(getattr(self,"setReques5"),"html.parser"));
+        for u2_img,u3_img,u4_img,u5_img in zip(getattr(self,"soup2").findAll("span",{"class","result"}),
+        getattr(self,"soup3").findAll("span",{"class","result"}),
+        getattr(self,"soup4").findAll("span",{"class","result"}),
+        getattr(self,"soup5").findAll("span",{"class","result"})):
+            dt["searchImage"]["page2"]["images"].append("https:"+u2_img.img["src"]);
+            dt["searchImage"]["page3"]["images"].append("https:"+u3_img.img["src"]);
+            dt["searchImage"]["page4"]["images"].append("https:"+u4_img.img["src"]);
+            dt["searchImage"]["page5"]["images"].append("https:"+u5_img.img["src"]);
+            site2 = requests.get(u2_img.a["href"]).content;
+            site3 = requests.get(u3_img.a["href"]).content;
+            site4 = requests.get(u4_img.a["href"]).content;
+            site5 = requests.get(u5_img.a["href"]).content;
+            soup2 = BeautifulSoup(site2,"html.parser");
+            soup3 = BeautifulSoup(site3,"html.parser");
+            soup4 = BeautifulSoup(site4,"html.parser");
+            soup5 = BeautifulSoup(site5,"html.parser");
+            for sites2,sites3,sites4,sites5 in zip(soup2.findAll("div",{"class":"detail-links"}),
+            soup3.findAll("div",{"class":"detail-links"}),
+            soup4.findAll("div",{"class":"detail-links"}),
+            soup5.findAll("div",{"class":"detail-links"})):
+                dt["searchImage"]["page2"]["sites"].append(sites2.a["href"]);
+                dt["searchImage"]["page3"]["sites"].append(sites3.a["href"]);
+                dt["searchImage"]["page4"]["sites"].append(sites4.a["href"]);
+                dt["searchImage"]["page5"]["sites"].append(sites5.a["href"]);
+        dmp = json.dumps(dt,indent=2,sort_keys=True);return json.dumps(dmp);
+    def picSearch_All(self,query):
+        return self.picsearch_pages1(query);
+        return self.picSearch_pages2345(query);
