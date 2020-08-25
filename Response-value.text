@@ -175,6 +175,32 @@ SourceForge :
         },
     };
 
+picsearch :
+{
+    "searchImage":{
+        "page1":{
+            "sites":[str], -> url sites
+            "images":[str], -> url image
+                },
+        "page2":{
+            "sites":[str], -> url sites
+            "images":[str], -> url image
+                },
+        "page3":{
+            "sites":[str], -> url sites
+            "images":[str], -> url image
+                },
+        "page4":{
+            "sites":[str], -> url sites
+            "images":[str], -> url image
+                },
+        "page5":{
+            "sites":[str], -> url sites
+            "images":[str], -> url image
+                },
+        },
+};
+
 
 IpWhois :
     {
