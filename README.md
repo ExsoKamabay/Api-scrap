@@ -53,7 +53,7 @@ print(picSearch().picSearch_All("bird parrot"));<br>
 print(Google().google_search_query("free fire",lang="id",maxSearch=10));<br><br>
 
 - classname().methodname(query) -> <a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/example-response.txt">return json</a>
-- take a specific <a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/Response-value.text">value</a><br>
-classname().methodname(query)["<a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/Response-value.text">value</a>"]<br><br> Mail : lexyong66@gmail.com;
+- take a specific value<br>
+classname().methodname(query)["keys"]<br><br> Mail : lexyong66@gmail.com;
 
  
