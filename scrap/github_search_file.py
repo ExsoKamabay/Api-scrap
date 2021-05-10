@@ -192,5 +192,8 @@ class picSearch:
                 dt["searchImage"]["page5"]["sites"].append(sites5.a["href"]);
         dmp = json.dumps(dt,indent=2,sort_keys=True);return json.loads(dmp);
     def picSearch_All(self,query):
-        return self.picsearch_pages1(query);
-        return self.picSearch_pages2345(query);
+        self.results = {
+            'page1':self.picsearch_pages1(query),
+            'page2345':self.picSearch_pages2345(query)
+        }
+        return json.loads(json.dumps(self.results,indent=1,sort_keys=True));
