@@ -49,7 +49,7 @@ print(DlanDroid().dlandroid("free fire"));
 print(Gamemod().gamemod("free fire"));
 print(A2zapk().a2zapk("free fire"));
 print(Rexdl().rexdl("free fire"));
-print(IpWhois().ipwhois("2404:6800:4001:806::200e"));
+#print(IpWhois().ipwhois("2404:6800:4001:806::200e"));
 print(picSearch().picsearch_pages1("bird parrot"));
 print(picSearch().picsearch_pages2345("bird parrot"));
 print(picSearch().picSearch_All("bird parrot"));
