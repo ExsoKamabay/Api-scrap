@@ -31,29 +31,47 @@
       Class : Warna() - Method : color[value] -> str - red,cyan,magenta,green,blue,yellow<br>
       Class : picSearch() - Method : picsearch_pages1(query),picsearch_pages2345(query),picSearch_All(query) ->  str <br>
       <p><strong>Note   :<br>"   The picsearch_pages1(); method searches only the main page section, while the picsearch_pages2345(); method searches pages 2,3,4,5 this method may be a little slower, whereas the picSearch_All () method will search these 5 pages 1,2,3,4,5 will be slower than the picsearch_pages1(); and picsearch_pages2345() methods"</strong></p><br><h4></strong>
-#call the class method<br>from scrap import *<br><br>
-#displays results<br><br>
-wrna = Warna().color;<br>
-print(wrna["red"]+"RED"+wrna["cyan"]+"CYAN");<br>
-print(wrna["green"]+"GREEN"+wrna["magenta"]+"MAGENTA");<br>
-print(wrna["yellow"]+"YELLOW"+wrna["blue"]+"BLUE");<br>
-print(HappyMod().happymod("free fire"));<br>
-print(Github_search_enggine().search_github("free fire"));<br>
-print(Sourceforge().sourceforge("tools"));<br>
-print(OceanOfGame().oceanofgame("free fire"));<br>
-print(Uptodown().uptodown("free fire","id"));<br>
-print(DlanDroid().dlandroid("free fire"));<br>
-print(Gamemod().gamemod("free fire"));<br>
-print(A2zapk().a2zapk("free fire"));<br>
-print(Rexdl().rexdl("free fire"));<br>
-print(IpWhois().ipwhois("2404:6800:4001:806::200e"));<br>
-print(picSearch().picsearch_pages1("bird parrot"));<br>
-print(picSearch().picsearch_pages2345("bird parrot"));<br>
-print(picSearch().picSearch_All("bird parrot"));<br>
-print(Google().google_search_query("free fire",lang="id",maxSearch=10));<br><br>
+# call the class method<br>
+    
+```python
+from scrap import *
+#displays results
+wrna = Warna().color;
+print(wrna["red"]+"RED"+wrna["cyan"]+"CYAN");
+print(wrna["green"]+"GREEN"+wrna["magenta"]+"MAGENTA");
+print(wrna["yellow"]+"YELLOW"+wrna["blue"]+"BLUE");
+print(HappyMod().happymod("free fire"));
+print(Github_search_enggine().search_github("free fire"));
+print(Sourceforge().sourceforge("tools"));
+print(OceanOfGame().oceanofgame("free fire"));
+print(Uptodown().uptodown("free fire","id"));
+print(DlanDroid().dlandroid("free fire"));
+print(Gamemod().gamemod("free fire"));
+print(A2zapk().a2zapk("free fire"));
+print(Rexdl().rexdl("free fire"));
+print(IpWhois().ipwhois("2404:6800:4001:806::200e"));
+print(picSearch().picsearch_pages1("bird parrot"));
+print(picSearch().picsearch_pages2345("bird parrot"));
+print(picSearch().picSearch_All("bird parrot"));
+print(Google().google_search_query("free fire",lang="id",maxSearch=10));
+```
 
+# install on pip for windows
+```python
+pip install kmy_scrap==0.2.0
+```
+
+# install on pip for Linux
+```python
+pip3 install kmy_scrap==0.2.0
+```
+
+- from kmy_scrap import className
+```python
+#example
+from kmy_scrap import HappyMod
+print(HappyMod().happymod("free fire"))
+```
 - classname().methodname(query) -> <a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/example-response.txt">return json</a>
 - take a specific value<br>
 classname().methodname(query)["key"]<br><br> Mail : lexyong66@gmail.com;
-
- 
