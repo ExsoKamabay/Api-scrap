@@ -41,23 +41,28 @@ from kmy_scrap import HappyMod
 print(HappyMod().happymod("free fire"))
 ```
 
-<strong><h3>start using</h3>
-  <h4>Class : Github_search_enggine() - Method : search_github(query) - str<br>
-      Class : Sourceforge() - Method : sourceforge(query) -> str <br>
-      Class : OceanOfGame() - Method : oceanofgame(query) -> str <br>
-      Class : HappyMod() - Method : happymod(query) -> str <br>
-      Class : Uptodown() - Method : uptodown(query,lang) -> str <br>
-      Class : DlanDroid() - Method : dlandroid(query) -> str <br>
-      Class : Gamemod() - Method : gamemod(query) -> str <br>
-      Class : A2zapk() - Method : a2zapk(query) -> str <br>
-      Class : Rexdl() - Method : rexdl(query) -> str <br>
-      Class : IpWhois() - Method : ipwhois(query) -> ip str <br>
-      Class : Google() - Method : google_search_query(query,lang,maxSearch,kwargs) -> str -> int -> opt <br>
-      Class : Warna() - Method : color[value] -> str - red,cyan,magenta,green,blue,yellow<br>
-      Class : picSearch() - Method : picsearch_pages1(query),picsearch_pages2345(query),picSearch_All(query) ->  str <br>
-      <p><strong>Note   :<br>"   The picsearch_pages1(); method searches only the main page section, while the picsearch_pages2345(); method searches pages 2,3,4,5 this method may be a little slower, whereas the picSearch_All () method will search these 5 pages 1,2,3,4,5 will be slower than the picsearch_pages1(); and picsearch_pages2345() methods"</strong></p><br><h4></strong>
-# call the class method<br>
-    
+# Class & Method
+
+``` python
+Rexdl().rexdl(query:str)
+A2zapk().a2zapk(query:str)
+Gamemod().gamemod(query:str)
+HappyMod().happymod(query:str)
+DlanDroid().dlandroid(query:str)
+Sourceforge().sourceforge(query:str) 
+OceanOfGame().oceanofgame(query:str) 
+Uptodown().uptodown(query:str,lang:str)
+IpWhois().ipwhois(query:str) -> ip4
+Github_search_enggine().search_github(query:str) 
+Google().google_search_query(query:str,lang:str,maxSearch:int)
+Warna().color[value] -> str - red,cyan,magenta,green,blue,yellow
+picSearch().picSearch_All(query:str)
+picSearch().picsearch_pages1(query:str)
+picSearch().picsearch_pages2345(query:str)
+
+```
+
+
 ```python
 from scrap import *
 #displays results
