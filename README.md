@@ -16,6 +16,31 @@
   <li>IpWhois</li>
   <li>picSearch</li>
 </ul>
+
+# install on pip for windows
+```python
+#version 1.0 has problems importing if using pip upgraded to version 2.0
+pip install kmy_scrap
+pip install --upgrade kmy_scrap
+# OR
+pip install kmy_scrap==0.2.0
+```
+
+# install on pip for Linux
+```python
+#version 1.0 has problems importing if using pip upgraded to version 2.0
+pip3 install kmy_scrap && pip3 install --upgrade kmy_scrap
+# OR
+pip3 install kmy_scrap==0.2.0
+```
+
+- from kmy_scrap import className
+```python
+#example
+from kmy_scrap import HappyMod
+print(HappyMod().happymod("free fire"))
+```
+
 <strong><h3>start using</h3>
   <h4>Class : Github_search_enggine() - Method : search_github(query) - str<br>
       Class : Sourceforge() - Method : sourceforge(query) -> str <br>
@@ -55,23 +80,7 @@ print(picSearch().picsearch_pages2345("bird parrot"));
 print(picSearch().picSearch_All("bird parrot"));
 print(Google().google_search_query("free fire",lang="id",maxSearch=10));
 ```
-
-# install on pip for windows
-```python
-pip install kmy_scrap==0.2.0
-```
-
-# install on pip for Linux
-```python
-pip3 install kmy_scrap==0.2.0
-```
-
-- from kmy_scrap import className
-```python
-#example
-from kmy_scrap import HappyMod
-print(HappyMod().happymod("free fire"))
-```
+    
 - classname().methodname(query) -> <a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/example-response.txt">return json</a>
 - take a specific value<br>
 classname().methodname(query)["key"]<br><br> Mail : lexyong66@gmail.com;
