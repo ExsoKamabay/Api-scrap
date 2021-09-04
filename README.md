@@ -17,12 +17,12 @@
   <li>picSearch</li>
 </ul>
 
-# Downloads packages
+# Downloads 👇
 ```python
 #requires python3
-# windows
+#👉 Windows
 pip install kmy_scrap
-# Linux
+#👉 Linux
 pip3 install kmy_scrap
 ```
 
