@@ -17,24 +17,16 @@
   <li>picSearch</li>
 </ul>
 
-# install on pip for windows
+# Downloads packages
 ```python
-#version 1.0 has problems importing if using pip upgraded to version 2.0
+#requires python3
+# windows
 pip install kmy_scrap
-pip install --upgrade kmy_scrap
-# OR
-pip install kmy_scrap==0.2.0
+# Linux
+pip3 install kmy_scrap
 ```
 
-# install on pip for Linux
-```python
-#version 1.0 has problems importing if using pip upgraded to version 2.0
-pip3 install kmy_scrap && pip3 install --upgrade kmy_scrap
-# OR
-pip3 install kmy_scrap==0.2.0
-```
-
-- from kmy_scrap import className
+- usage example!
 ```python
 #example
 from kmy_scrap import HappyMod
@@ -63,28 +55,6 @@ picSearch().picsearch_pages2345(query:str)
 ```
 
 
-```python
-from scrap import *
-#displays results
-wrna = Warna().color;
-print(wrna["red"]+"RED"+wrna["cyan"]+"CYAN");
-print(wrna["green"]+"GREEN"+wrna["magenta"]+"MAGENTA");
-print(wrna["yellow"]+"YELLOW"+wrna["blue"]+"BLUE");
-print(HappyMod().happymod("free fire"));
-print(Github_search_enggine().search_github("free fire"));
-print(Sourceforge().sourceforge("tools"));
-print(OceanOfGame().oceanofgame("free fire"));
-print(Uptodown().uptodown("free fire","id"));
-print(DlanDroid().dlandroid("free fire"));
-print(Gamemod().gamemod("free fire"));
-print(A2zapk().a2zapk("free fire"));
-print(Rexdl().rexdl("free fire"));
-#print(IpWhois().ipwhois("2404:6800:4001:806::200e"));
-print(picSearch().picsearch_pages1("bird parrot"));
-print(picSearch().picsearch_pages2345("bird parrot"));
-print(picSearch().picSearch_All("bird parrot"));
-print(Google().google_search_query("free fire",lang="id",maxSearch=10));
-```
     
 - classname().methodname(query) -> <a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/example-response.txt">return json</a>
 - take a specific value<br>
