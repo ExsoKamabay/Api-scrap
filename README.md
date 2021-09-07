@@ -19,7 +19,6 @@
 
 # Downloads 👇
 ```python
-#requires python3
 #👉 Windows
 pip install kmy_scrap
 #👉 Linux
