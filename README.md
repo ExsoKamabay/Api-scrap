@@ -55,6 +55,6 @@ picSearch().picsearch_pages2345(query:str)
 
 
     
-- classname().methodname(query) -> <a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/example-response.txt">return json</a>
+- classname().methodname(query) -> <a href="https://github.com/ExsoKamabay/Api-scrap/blob/master/response.json">return json</a>
 - take a specific value<br>
 classname().methodname(query)["key"]<br><br> Mail : lexyong66@gmail.com;
