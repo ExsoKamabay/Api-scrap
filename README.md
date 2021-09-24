@@ -17,6 +17,9 @@
 - [X] ***`IPWhois`*** [link](https://www.ipwhois.io)
 - [X] ***`OceanOffGames`*** [link](http://oceanofgames.com/)
 
+
+[Pypi kmy scrap](https://pypi.org/project/kmy-scrap/)
+
 ~ **download from pip 👇 🐍** `require python 3.x.x`
 
 ```python
