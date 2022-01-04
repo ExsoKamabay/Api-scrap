@@ -79,7 +79,7 @@ class DlanDroid:
         for title in getattr(self,"soup").findAll("div",{"class":"col-lg-10 visible-lg visible-md"}):
             dt["dlandroid_search_apps"]["title"].append(title.a.text.strip());
         for img in getattr(self,"soup").findAll("a",{"class":"thumbnail icon-post"}):
-            dt["dlandroid_search_apps"]["img"].append(img.img["data-src"]);
+            dt["dlandroid_search_apps"]["img"].append(img.img["src"]);
         dln =  json.dumps(dt,indent=4,sort_keys=True);return json.loads(dln);
 class Gamemod:
     def gamemod(self,query):
