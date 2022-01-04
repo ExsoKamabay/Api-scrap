@@ -159,9 +159,8 @@ class Google:
                 "title":[]
             },
         };
-        for i in search(query,lang=lang,start=0,stop=maxSearch,
-        tld="com",safe="off",tbs="0",num=10,country=None,pause=1.5,
-        domains=None,tpe="",user_agent=get_random_user_agent()):
+        for i in search(query,lang=lang,start=0,stop=maxSearch,tld="com",
+            safe="off",tbs="0",num=10,country=None,pause=1.5,user_agent=get_random_user_agent()):
             dt["google_search_query"]["urls"].append(i);
             tl=BeautifulSoup(requests.get(i).content,"html.parser");
             for title in tl.findAll("title"):
