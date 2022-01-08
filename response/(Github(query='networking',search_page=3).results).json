@@ -1,0 +1,199 @@
+{
+  "Results": [
+    [
+      {
+        "url": "https://github.com/3lvis/Networking",
+        "star": "1.3k",
+        "upload": "Nov 23, 2021",
+        "language": "Swift",
+        "decription": "Easy HTTP Networking in Swift a NSURLSession wrapper with image caching support  "
+      },
+      {
+        "url": "https://github.com/amitshekhariitbhu/Fast-Android-Networking",
+        "star": "5.3k",
+        "upload": "Nov 23, 2021",
+        "language": "Java",
+        "decription": "\ud83d\ude80 A Complete Fast Android Networking Library that also supports HTTP/2 \ud83d\ude80"
+      },
+      {
+        "url": "https://github.com/clowwindy/Awesome-Networking",
+        "star": "3.2k",
+        "upload": "Feb 10, 2021",
+        "language": "C++",
+        "decription": "A curated list of awesome networking libraries, resources and shiny things  "
+      },
+      {
+        "url": "https://github.com/ValveSoftware/GameNetworkingSockets",
+        "star": "5.8k",
+        "upload": "Jan 5, 2022",
+        "language": "Swift",
+        "decription": "Reliable & unreliable messages over UDP. Robust message fragmentation & reassembly. P2P networking / NAT traversal. E\u2026  "
+      },
+      {
+        "url": "https://github.com/Alamofire/Alamofire",
+        "star": "4issues needhelp",
+        "upload": "Jan 8, 2022",
+        "language": "Go",
+        "decription": "Elegant HTTP Networking in Swift  "
+      },
+      {
+        "url": "https://github.com/tidwall/evio",
+        "star": "37k",
+        "upload": "Mar 28, 2021",
+        "language": "Python",
+        "decription": "Fast event-loop networking for Go  "
+      },
+      {
+        "url": "https://github.com/moranzcw/Computer-Networking-A-Top-Down-Approach-NOTES",
+        "star": "5.2k",
+        "upload": "Mar 8, 2021",
+        "language": "C++",
+        "decription": "\u300a\u8ba1\u7b97\u673a\u7f51\u7edc\uff0d\u81ea\u9876\u5411\u4e0b\u65b9\u6cd5(\u539f\u4e66\u7b2c6\u7248)\u300b\u7f16\u7a0b\u4f5c\u4e1a\uff0cWireshark\u5b9e\u9a8c\u6587\u6863\u7684\u7ffb\u8bd1\u548c\u89e3\u7b54\u3002  "
+      },
+      {
+        "url": "https://github.com/MFatihMAR/Game-Networking-Resources",
+        "star": "3.9k",
+        "upload": "Jan 4, 2022",
+        "language": "Swift",
+        "decription": "A Curated List of Game Network Programming Resources  "
+      },
+      {
+        "url": "https://github.com/freshOS/Networking",
+        "star": "4.3k",
+        "upload": "Nov 28, 2021",
+        "language": "C#",
+        "decription": "\u26a1\ufe0f Concise networking code leveraging Combine, Decodable & Generics.  "
+      }
+    ],
+    [
+      {
+        "url": "https://github.com/dsccommunity/NetworkingDsc",
+        "star": "190",
+        "upload": "Jun 15, 2021",
+        "language": "PowerShell",
+        "decription": "DSC resources for configuring settings related to networking.  "
+      },
+      {
+        "url": "https://github.com/tidwall/SwiftWebSocket",
+        "star": "19issues needhelp",
+        "upload": "Aug 19, 2021",
+        "language": "Swift",
+        "decription": "Fast Websockets in Swift for iOS and OSX  "
+      },
+      {
+        "url": "https://github.com/AFNetworking/AFNetworking",
+        "star": "1.5k",
+        "upload": "Jan 4, 2022",
+        "language": "Objective-C",
+        "decription": "A delightful networking framework for iOS, macOS, watchOS, and tvOS.  "
+      },
+      {
+        "url": "https://github.com/pjreddie/darknet",
+        "star": "1issue needshelp",
+        "upload": "Jan 8, 2022",
+        "language": "C",
+        "decription": "Convolutional Neural Networks"
+      },
+      {
+        "url": "https://github.com/AbleOpus/NetworkingSamples",
+        "star": "33.3k",
+        "upload": "Feb 8, 2017",
+        "language": "C#",
+        "decription": "Provides sample code for TCP socket programming.  "
+      },
+      {
+        "url": "https://github.com/tom-weiland/tcp-udp-networking",
+        "star": "1issue needshelp",
+        "upload": "Jan 6, 2022",
+        "language": "C#",
+        "decription": "Source code from my C# networking tutorial series on YouTube.  "
+      },
+      {
+        "url": "https://github.com/Azure/DotNetty",
+        "star": "22k",
+        "upload": "Dec 15, 2021",
+        "language": "C#",
+        "decription": "DotNetty project \u2013 a port of netty, event-driven asynchronous network application framework  "
+      },
+      {
+        "url": "https://github.com/containernetworking/cni",
+        "star": "110",
+        "upload": "Jan 5, 2022",
+        "language": "Go",
+        "decription": "Container Network Interface - networking for Linux containers  "
+      },
+      {
+        "url": "https://github.com/kristenjacobs/container-networking",
+        "star": "445",
+        "upload": "Jul 22, 2021",
+        "language": "Shell",
+        "decription": "Container networking from scratch, from a single namespace to an overlay network.  "
+      }
+    ],
+    [
+      {
+        "url": "https://github.com/projectcalico/calico",
+        "star": "3.1k",
+        "upload": "Jan 7, 2022",
+        "language": "Go",
+        "decription": "Cloud native networking and network security  "
+      },
+      {
+        "url": "https://github.com/warmcat/libwebsockets",
+        "star": "13issues needhelp",
+        "upload": "Jan 5, 2022",
+        "language": "C",
+        "decription": "canonical libwebsockets.org networking library  "
+      },
+      {
+        "url": "https://github.com/libevent/libevent",
+        "star": "3.3k",
+        "upload": "Dec 21, 2021",
+        "language": "C",
+        "decription": "Event notification library  "
+      },
+      {
+        "url": "https://github.com/cilium/cilium",
+        "star": "8.3k",
+        "upload": "Jan 7, 2022",
+        "language": "Go",
+        "decription": "eBPF-based Networking, Security, and Observability  "
+      },
+      {
+        "url": "https://github.com/Azure/azure-container-networking",
+        "star": "10.5k",
+        "upload": "Jan 4, 2022",
+        "language": "Go",
+        "decription": "Azure Container Networking Solutions for Linux and Windows Containers  "
+      },
+      {
+        "url": "https://github.com/moby/libnetwork",
+        "star": "239",
+        "upload": "Dec 18, 2021",
+        "language": "Go",
+        "decription": "networking for containers  "
+      },
+      {
+        "url": "https://github.com/robbiehanson/CocoaAsyncSocket",
+        "star": "1.9k",
+        "upload": "Dec 21, 2021",
+        "language": "Objective-C",
+        "decription": "Asynchronous socket networking library for Mac and iOS  "
+      },
+      {
+        "url": "https://github.com/sogou/workflow",
+        "star": "1issue needshelp",
+        "upload": "Jan 7, 2022",
+        "language": "C++",
+        "decription": "C++ Parallel Computing and Asynchronous Networking Engine  "
+      },
+      {
+        "url": "https://github.com/blanboom/awesome-home-networking-cn",
+        "star": "12.1k",
+        "upload": "Dec 19, 2021",
+        "language": "Python",
+        "decription": "\u5bb6\u5ead\u7f51\u7edc\u77e5\u8bc6\u6574\u7406  "
+      }
+    ]
+  ]
+}
