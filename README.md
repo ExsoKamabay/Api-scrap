@@ -1,19 +1,16 @@
 # Api-scrap
 
-**Mesin pencarian berbasis scraping**
-
-update kali ini benar-benar melakukan perubahan pada semua kode dari versi sebelumnya hasil yang dikembalikan pun berbeda dari versi sebelumnya,
+# *`apikey search enggine scraping based`* 🐺
 
 
-
-**Daftar mesin pencarian**
+# **`like this site!`**
 
 - **_`Github`_** [link](https://github.com/search?q=)
 - **_`Google`_** [link](https://google.com/search?q=)
 - **_`HappyMod`_** [link](https://www.happymod.com/?q=)
 - **_`Rexdl`_** [link](https://www.rexdl.com)
 
-**`Menampilkan hasil`**
+**`show results`**
 
 ```python 
 from kmy_scrap import Google,Github,Search_App_Mod
@@ -43,17 +40,14 @@ results = obj.search_image(start=1,related_results=True)
 print(result,'\n\n',results)
 ```
 
-***```result berhasil```*** [contoh response](response/Google('dayaks').search_image(start=1).json)
+```result``` successful ->  [response](response/Google('dayaks').search_image(start=1).json)
 
-***```results berhasil```*** [contoh response](response/Google('dayaks')search_image(start=1,related_results=True)'response%20200'.json)
+```results``` successful -> [response](response/Google('dayaks')search_image(start=1,related_results=True)'response%20200'.json)
 
-***```results masalah server```*** [contoh response](response/Google('dayaks')search_image(start=1,related_results=True)'error%20server'.json)
+```results``` response problem -> [response](response/Google('dayaks')search_image(start=1,related_results=True)'error%20server'.json)
 
-***```results masalah nilai```*** [contoh response](response/Google('dayaks')search_image(start=1,related_results='ok')'error%20value'.json)
+response problem if searching doesn't stop for a while,this happens to the ```related_result``` value.
 
+```results``` value problem -> [response](response/Google('dayaks')search_image(start=1,related_results='ok')'error%20value'.json)
 
-## *Catatan!* ```dalam pypi masih versi lama belum di update,ini masih tahap pengembangan.```
-
-
-
-[Pypi Kmy_scrap]( https://github.com/ExsoKamabay/Api-scrap)
+this happens if the ```related_result``` parameter value is invalid.
