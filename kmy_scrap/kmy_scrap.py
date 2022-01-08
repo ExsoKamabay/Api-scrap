@@ -138,12 +138,12 @@ class Google:
 
 class Search_App_Mod:
     def __init__(self,query:str) -> str:
-        self.query = query.replace(' ','+')
+        self.query = quote_plus(query)
     
     @property
     def happymod(self):
         self.results = []
-        try:self.gets = requests.get(f'https://happymod.com/search.html?q={self.query}',params=random_user_agent())
+        try:self.gets = requests.get(f'https://happymod.com/search.html?q={self.query}',headers=random_user_agent())
         except:return "Check Your Internet Connection!"
         self.urls = BeautifulSoup(self.gets.content,'html.parser').find_all('a',{'class':'pdt-app-img'})
         for i in self.urls:
@@ -151,7 +151,7 @@ class Search_App_Mod:
             self.rpk = self.ipk.find('/')
             self.url = BeautifulSoup(
                 requests.get(f"https://happymod.com{i['href']}",
-                params=random_user_agent()).content,'html.parser');
+                headers=random_user_agent()).content,'html.parser');
             for name,info,ftur,img in zip(
                 self.url.find_all('div',{'class':'new-div-box new-pdt-bg-box'}),
                 self.url.find_all('ul',{'class':'new-pdt-ul clearfix'}),
@@ -176,16 +176,16 @@ class Search_App_Mod:
             results = [];
             for i in range(search_page):
                 for u in BeautifulSoup(requests.get(f"https://rexdl.com/page/{i+1}/?s={self.query}",
-                    params=random_user_agent()).content,'html.parser').find_all('h2',{'class':'post-title'}):
+                    headers=random_user_agent()).content,'html.parser').find_all('h2',{'class':'post-title'}):
                     results.append({'url':u.a['href'],'title':u.a['title']})
             return results;
         for i in search_url():
-            self.soup = BeautifulSoup(requests.get(i['url'],params=random_user_agent()).content,'html.parser')
+            self.soup = BeautifulSoup(requests.get(i['url'],headers=random_user_agent()).content,'html.parser')
             for dec,nw,ld in zip(
                 self.soup.find_all('div',{'class':'entry-inner'}),
                 self.soup.find_all('div',{'class':'DWPxHb'}),
                 self.soup.find_all('span',{'class':'readdownload a'})):
-                self.link_i = BeautifulSoup(requests.get(ld.a['href'],params=random_user_agent()).content,'html.parser')
+                self.link_i = BeautifulSoup(requests.get(ld.a['href'],headers=random_user_agent()).content,'html.parser')
                 for up,vr,fs,pw in zip(
                     self.link_i.find_all('li',{'class':'dl-update'}),
                     self.link_i.find_all('li',{'class':'dl-version'}),
@@ -204,6 +204,3 @@ class Search_App_Mod:
                             'size':fs.text.strip('File Size:'),
                             'password':pw['title']}]})
         return json.dumps(self.ls_results,indent=1)
-
-dt = Google('dayaks').search_image(start=1)
-open("Google('dayaks').search_image(start=1).json",'w').write(dt)
