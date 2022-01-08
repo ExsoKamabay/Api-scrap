@@ -43,13 +43,13 @@ results = obj.search_image(start=1,related_results=True)
 print(result,'\n\n',results)
 ```
 
-***```result berhasil```*** [contoh response](response\Google('dayaks').search_image(start=1).json)
+***```result berhasil```*** [contoh response](response/Google('dayaks').search_image(start=1).json)
 
 ***```results berhasil```*** [contoh response](response/Google('dayaks')search_image(start=1,related_results=True)'response%20200'.json)
 
 ***```results masalah server```*** [contoh response](response/Google('dayaks')search_image(start=1,related_results=True)'error%20server'.json)
 
-***```results masalah nilai```*** [contoh response](response/Google('dayaks')search_image(start=1,related_results=True)'error%20value'.json)
+***```results masalah nilai```*** [contoh response](response/Google('dayaks')search_image(start=1,related_results='ok')'error%20value'.json)
 
 
 ## *Catatan!* ```dalam pypi masih versi lama belum di update,ini masih tahap pengembangan.```
