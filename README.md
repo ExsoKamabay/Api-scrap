@@ -51,3 +51,7 @@ response problem if searching doesn't stop for a while,this happens to the ```re
 ```results``` value problem -> [response](response/Google('dayaks')search_image(start=1,related_results='ok')'error%20value'.json)
 
 this happens if the ```related_result``` parameter value is invalid.
+
+<hr>
+
+# [```Other results```](response)
