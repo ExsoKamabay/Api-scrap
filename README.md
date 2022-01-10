@@ -10,6 +10,11 @@
 - **_`HappyMod`_** [link](https://www.happymod.com/?q=)
 - **_`Rexdl`_** [link](https://www.rexdl.com)
 
+```python
+# download from pip
+pip install kmy-scrap
+```
+
 **`Example`**
 
 ```python 
