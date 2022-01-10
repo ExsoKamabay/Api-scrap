@@ -26,8 +26,10 @@ search_rexdl = search_app_mod.rexdl(1)
 search_happymod = search_app_mod.happymod()
 
 github = Github(query='networking')
-search_github = github.search(page=2)
-searches_github = github.searches(page=2)
+search_github = github.search(page=2)# it's looking for 1 page 
+# https://github.com/search?q=networking&page=2
+searches_github = github.searches(page=2) # it searches pages starting from 1 to stop at the specified page
+# https://github.com/search?q=networking&page=1 and https://github.com/search?q=networking&page=2
 ```
 
 ## ```the result is still in string form, we need to import json to convert the result in json form```
@@ -58,5 +60,3 @@ print(loads(searches_github))
 ```
 ```results``` ➡️ [search_github](response/github.search(page=2).json) ➡️ [searches_github](response/github.searches(page=2).json)
 <hr>
-
-# [```Other results```](response)
