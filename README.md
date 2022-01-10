@@ -16,7 +16,7 @@
 #import package
 from kmy_scrap import Google,Github,Search_App_Mod
 
-google = Google(query='wolfves')
+google = Google(query='wolf')
 google_search = google.search_query(start=1,stop=20)
 google_image = google.google.search_image(start=1,related_results=True)
 google_video = google.search_video(max_search=10)
