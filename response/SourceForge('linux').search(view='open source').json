@@ -1,0 +1,130 @@
+{
+  "linux -> open source": [
+    {
+      "title": "Wsl2-Linux-Kernel",
+      "url": "https://sourceforge.net/projects/wsl2-linux-kernel.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/wsl2-linux-kernel/icon?089bbf7c9cdcd09522af724ca2d6abb4d4c77bbfdec5d475f019b3807fd53e12?&w=120",
+      "decription": "We help companies keep their networks and Internet connections secure. Our VPN service adds an extra layer of protection to secure your communications. We do this by applying strong encryption to all incoming and outgoing traffic so that no third parties can access your confidential information. Protect your organization against security breaches. Secure remote team access. Simplify business network security. Access region-specific online content from anywhere in the world"
+    },
+    {
+      "title": "Mx-Linux",
+      "url": "https://sourceforge.net/projects/mx-linux/",
+      "icon": "https://a.fsdn.com/allura/p/mx-linux/icon?1610808049?&w=120",
+      "decription": "vtenext is the Hybrid CRM open source equipped with the BPMN engine for the processes design. All the functionalities offered by a CRM, that is to say marketing, sales and post sales management, are strengthened by the BPMN engine to design automated processes.\rvtenext transforms the CRM logic from the data to the process core to digitize all the processes and the creation of process-driven solution, without the need to write code strings."
+    },
+    {
+      "title": "Linux Command",
+      "url": "https://sourceforge.net/projects/linux-command.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/linux-command/icon?9d59d7bbdc1fd2ec3f36045ee09c91f2ba1740266610f8c2cc66b1878a62cf0b?&w=120",
+      "decription": "The WSL2-Linux-Kernel repo contains the kernel source code and configuration files for the WSL2 kernel. If you discover an issue relating to WSL or the WSL2 kernel, please report it on the WSL GitHub project. It is not possible to report issues on the WSL2-Linux-Kernel project. Instructions for building an x86_64 WSL2 kernel with an Ubuntu distribution are provided. The number one way that we recommend you run Linux distributions is by installing Windows Terminal. Using Windows Terminal enables..."
+    },
+    {
+      "title": "Antix-Linux",
+      "url": "https://sourceforge.net/projects/antix-linux/",
+      "icon": "https://a.fsdn.com/allura/p/antix-linux/icon?1602958686",
+      "decription": "MX Linux is a cooperative venture between the antiX and former MEPIS communities, using the best tools and talents from each distro. It is a midweight OS designed to combine an elegant and efficient desktop with simple configuration, high stability, solid performance and medium-sized footprint.MX Linux relies on the excellent upstream work by Linux and the open-source community, deploying Xfce4 as Desktop Environment on top of a Debian Stable base. We draw from the core antiX system..."
+    },
+    {
+      "title": "Photoshop Cc Linux",
+      "url": "https://sourceforge.net/projects/photoshop-cc-linux.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/photoshop-cc-linux/icon?489060e40f48c707b8b87640a5b692e39217ded3340c2297234c4b2f0966954d?&w=120",
+      "decription": "Linux command encyclopedia search tool, the content includes Linux command manual, detailed explanation, study, and collection. The current warehouse has collected more than 570 Linux commands. It is a non-profit warehouse. It has generated a web site for easy use. Currently, the site does not have any advertisements. The content includes Linux command manuals, detailed explanations, and learning. Very worthy collection of Linux command quick reference manual. The copyright belongs..."
+    },
+    {
+      "title": "Garuda Linux",
+      "url": "https://sourceforge.net/projects/garuda-linux/",
+      "icon": "https://a.fsdn.com/allura/p/garuda-linux/icon?1626849001?&w=120",
+      "decription": "antiX is a fast, lightweight and easy to install linux live CD distribution based on Debian Stable for Intel-AMD x86 compatible systems."
+    },
+    {
+      "title": "Tor Browser",
+      "url": "https://sourceforge.net/projects/tor-browser.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/tor-browser/icon?1578068526?&w=120",
+      "decription": "This bash script helps you to install Photoshop CC version 19 on your Linux machine using wine behind the scene and sets some necessary components up for the best performance. Downloads necessary components and installs them (vcrun, atmlib, msxml...). Downloads photoshop.exe installer. Creates photoshop command and a desktop entry. Wine dark mode. Supports graphic cards like (intel, Nvidia). Saves the downloaded files in your cache directory. It's free and you will not need any license key..."
+    },
+    {
+      "title": "Scrcpy",
+      "url": "https://sourceforge.net/projects/scrcpy.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/scrcpy/icon?1638222741?&w=120",
+      "decription": "Garuda Linux is a userfriendly and performance orientated distro which is based on Arch Linux. Unlike Arch, the installation process is easy and management easy because of many included advanced GUI tools to manage the system. Garuda Linux provides system security by using automatic BTRFS snapshots when upgrading which you can boot into if an upgrade fails."
+    },
+    {
+      "title": "Rufus",
+      "url": "https://sourceforge.net/projects/rufus.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/rufus/icon?1635011423?&w=120",
+      "decription": "Project's goal is to create better tools for diagnosing Linux systems. Diagnostics include first failure data capture, error log analysis, preventative testing, and system inventory gathering.You can now find Power System specific packages on github.  libservicelog : https://github.com/power-ras/libservicelog  servicelog : https://github.com/power-ras/servicelog  lsvpd : https://github.com/power-ras/lsvpd  libvpd : https://github.com/power-ras/libvpd  ppc64-diag : https://github.com..."
+    },
+    {
+      "title": "Amidst",
+      "url": "https://sourceforge.net/projects/amidst.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/amidst/icon?1636429864?&w=120",
+      "decription": "Tor Browser enables you to use Tor on Windows, Mac OS X, or Linux without needing to install any software. Tor is a software that bounces your communications around a distributed network of relays run by volunteers. This effectively prevents anyone watching your Internet connection from learning what sites you visit; it prevents the sites you visit from learning your physical location; and allows you access to sites which are blocked.Tor Browser can run off a USB flash drive, comes with a pre..."
+    },
+    {
+      "title": "Barrier",
+      "url": "https://sourceforge.net/projects/barrier.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/barrier/icon?1635803074?&w=120",
+      "decription": "scrcpy is an application for displaying and controlling your Android device through USB connection (or over TCP/IP). It is cross-platform (GNU/Linux, macOS and Windows) and does not require any root access.scrcpy displays only the device screen but offers great performance (30~60fps) and quality (1920\u00d71080 or above). It\u2019s got low latency (35~70ms) and a very low startup time (less than a second). It offers plenty of great features and is non-intrusive, with nothing left installed inside..."
+    },
+    {
+      "title": "Cheat Engine",
+      "url": "https://sourceforge.net/projects/cheat-engine.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/cheat-engine/icon?1629116773?&w=120",
+      "decription": "Try CryptoTab\u2014the world's first browser with mining features. Earn bitcoin without looking up from watching videos, chatting, or gaming online. Join the community of more than 20 million users all over the world already enjoying CryptoTab Browser."
+    },
+    {
+      "title": "Osu!",
+      "url": "https://sourceforge.net/projects/osu.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/osu/icon?1641651624?&w=120",
+      "decription": "Rufus is a standalone app designed to format and create a bootable USB drive for a large variety of ISOs. The app is just over 1MB in size and is notably faster than similar competitor apps such as the Windows 7 USB utility, Universal USB Installer, and UNetbootin.Rufus can come in handy when you need to simply format a USB drive, install an OS on a machine that lacks a CD/DVD-ROM drive, or when you need to boot an operating system temporarily without intentions of actually installing the..."
+    },
+    {
+      "title": "Modassistant",
+      "url": "https://sourceforge.net/projects/modassistant.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/modassistant/icon?1632247943?&w=120",
+      "decription": "Cheat Engine is an open source development environment that\u2019s focused on modding, or modifying single player games running under window so you can play them according to your personal preferences. You can make games harder or easier as you wish, through various mod options. It also comes with many other features to help debug games and other applications, and protect your system by letting you inspect memory modifications by backdoors.Cheat Engine also comes with extensive scripting..."
+    },
+    {
+      "title": "Etcher",
+      "url": "https://sourceforge.net/projects/etcher.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/etcher/icon?1640791503?&w=120",
+      "decription": "Osu! is a simple rhythm game with a well thought out learning curve for players of all skill levels.One of the great aspects of Osu!  is that it is community-driven, with every single map created by another player with a variety of artists. Every map is a new experienceThis is the development client of the future osu!lazer project. Give it a try!Currently beatmaps on osu!lazer need to be dragged and dropped from beatmap listings here. Note: An account is..."
+    },
+    {
+      "title": "Opentrack",
+      "url": "https://sourceforge.net/projects/opentrack.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/opentrack/icon?1641478254?&w=120",
+      "decription": "Udeler is an open source, cross-platform desktop application for downloading Udemy Courses. It makes viewing and learning from Udemy Courses a lot easier by downloading the courses to your desktop, allowing you to view them conveniently offline and at your own pace. Udeler downloads Udemy Courses straight to your Downloads folder, keeping the original structure of course content intact. It works a lot like most other download managers, but Udeler automates this process when downloading..."
+    },
+    {
+      "title": "Obs Studio",
+      "url": "https://sourceforge.net/projects/obs-studio.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/obs-studio/icon?1633380745?&w=120",
+      "decription": "ModAssistant is a simple PC mod installer for Beat Saber, using mods from BeatMods. Beat Saber is the popular VR rhythm game where players must slash the beats as they fly towards them to the beat of lively music. ModAssistant comes with a number of great features like dependency resolution, mod uninstallation, and a complex theming engine. It features light, dark, BSMG and light pink themes, and can even have your own custom theme! Have more fun playing Beat Saber by customizing your..."
+    },
+    {
+      "title": "Brave Browser",
+      "url": "https://sourceforge.net/projects/brave-browser.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/brave-browser/icon?1642186697?&w=120",
+      "decription": "... platform use (windows, macOS, and Linux)."
+    },
+    {
+      "title": "Aseprite",
+      "url": "https://sourceforge.net/projects/aseprite.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/aseprite/icon?e6d9da4adfabd3bc70779879573108baaa0be26718dc79aa0b9f8c19c1080c2e?&w=120",
+      "decription": "opentrack is an application that can track users' head movements and relay this information to games and flight simulation software. It allows for output shaping, filtering, and the codebase builds on Windows, OSX and GNU/Linux."
+    },
+    {
+      "title": "Texworks",
+      "url": "https://sourceforge.net/projects/texworks.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/texworks/icon?1615485434?&w=120",
+      "decription": "DXVK is a Vulkan-based translation layer for Direct3D 9 through 11, for use on Linux with Wine. Direct3D is a graphics application programming interface built for Windows and is used for rendering three-dimensional graphics in applications. It is typically useful in applications where performance is vital, such as in three-dimensional games. This project aims to provide support for Direct3D11, feature level 11_1, and Direct3D10, feature level 10_1. Currently however, there are still a few..."
+    },
+    {
+      "title": "Ventoy",
+      "url": "https://sourceforge.net/projects/ventoy.mirror/",
+      "icon": "https://a.fsdn.com/allura/mirror/ventoy/icon?1641656200?&w=120",
+      "decription": "OBS Studios, also known as Open Broadcaster Software, is a free and open source software program for live streaming and video recording. Features of the software include device/source capture, recording, encoding and broadcasting. Stream on Windows, Mac or Linux.  This software is commonly used by video game streamers on the popular streaming platform Twitch."
+    }
+  ]
+}
