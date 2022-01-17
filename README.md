@@ -9,6 +9,9 @@
 - **_`Google`_** [link](https://google.com/search?q=)
 - **_`HappyMod`_** [link](https://www.happymod.com/?q=)
 - **_`Rexdl`_** [link](https://www.rexdl.com)
+- **_`Ocean Of Games`_** [link](http://oceanofgames.com/)
+- **_`Source Forge`_** [link](https://sourceforge.net/)
+
 
 ```python
 # download from pip
@@ -65,3 +68,9 @@ print(loads(searches_github))
 ```
 ```results``` ➡️ [search_github](response/github.search(page=2).json) ➡️ [searches_github](response/github.searches(page=2).json)
 <hr>
+
+# ```Update```
+
+- ```17-01-2022``` 
+
+add the ```ocean_of_game``` method to the ```Search_App_Mod``` class, a new ```SourceForge``` class with the ```search``` method to search.
