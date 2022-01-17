@@ -22,18 +22,18 @@ pip install kmy-scrap
 
 ```python 
 #import package
-from kmy_scrap import Google,Github,Search_App_Mod
+import kmy_scrap
 
-google = Google(query='wolf')
+google = kmy_scrap.Google(query='wolf')
 google_search = google.search_query(start=1,stop=20)
 google_image = google.google.search_image(start=1,related_results=True)
 google_video = google.search_video(max_search=10)
 
-search_app_mod = Search_App_Mod(query='free fire')
+search_app_mod = kmy_scrap.Search_App_Mod(query='free fire')
 search_rexdl = search_app_mod.rexdl(1)
 search_happymod = search_app_mod.happymod()
 
-github = Github(query='networking')
+github = kmy_scrap.Github(query='networking')
 search_github = github.search(page=2)# it's looking for 1 page 
 # https://github.com/search?q=networking&page=2
 searches_github = github.searches(page=2) # it searches pages starting from 1 to stop at the specified page
