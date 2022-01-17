@@ -17,6 +17,21 @@ def random_user_agent():
     ))}
     
 
+def list_category_OceanOfGame():
+    get = requests.get('http://oceanofgames.com/',headers=random_user_agent())
+    if get.status_code == 200:
+        rst = []
+        soup = BeautifulSoup(get.content,'html.parser').find('ul',id='menu-navigation')
+        for name in soup.find_all('a'):rst.append(name.text);
+        rst.remove('Home')
+        for i,v in enumerate(rst):
+            print(i+1,v.lower())
+    else:print(f'Error code {get.status_code}')
+
+
+
+
+
 class Github:
     def __init__(self,query='exso kamabay'):
         self.query = quote_plus(query)
@@ -54,7 +69,7 @@ class Github:
                         'language':lang.text,
                         'decription':dec.text.replace('    ','').strip('\n').replace('\n',''),
                         })
-                return json.dumps({"search":self.lst},indent=2,sort_keys=True)
+                return json.dumps({"search":self.lst},indent=2)
             else:return "Invalid response %s"%(self.get.status_code)
         except:pass
 
@@ -67,7 +82,7 @@ class Github:
         for y in self.list:
             for x in json.loads(y)['search']:
                 self.lst.append(x)
-        return json.dumps({"searches":self.lst},indent=2,sort_keys=True)
+        return json.dumps({"searches":self.lst},indent=2)
 
 
 class Google:
@@ -183,7 +198,7 @@ class Google:
                 except:pass
             if not self.results:
                 return "sorry an error occurred please try again!"
-            else:return json.dumps(self.results,indent=1,sort_keys=True)
+            else:return json.dumps(self.results,indent=1)
 
     def search_video(self,max_search=5):
         "maximal search"
@@ -263,3 +278,106 @@ class Search_App_Mod:
                             'password':pw['title']}]})
         return json.dumps(self.ls_results,indent=1)
 
+    def ocean_of_game(self,type:str,**kwargs) -> str:
+        'type : str -> category or search'
+        if not 'page' in  kwargs.keys():
+            self.page = 1
+        else:
+            self.page = kwargs['page']
+        self.url_search = 'http://oceanofgames.com/page/%s/?s=%s'%(self.page,self.query)
+        self.url_category = 'http://oceanofgames.com/category/%s/page/%s'%(self.query,self.page)
+
+        def category():
+            results = []
+            get = requests.get(self.url_category,headers=random_user_agent())
+            if get.status_code == 200:
+                soup = BeautifulSoup(get.content,'html.parser')
+                for url,img,upload,decription in zip(
+                    soup.find_all('h2',{'class':'title'}),
+                    soup.find_all('a',{'class':'post-thumb'}),
+                    soup.find_all('div',{'class':'post-date'}),
+                    soup.find_all('div',{'class':'post-content clear-block'})):
+                    try:
+                        results.append({
+                            'title':url.text,
+                            'url':url.a['href'],
+                            'img':img.img['src'],
+                            'upload':upload.text,
+                            'decription':decription.text,
+                            })
+                    except:pass
+                return {f'category -> {self.query}':results}
+            else:return f'Error code {get.status_code}'
+        
+        def search():
+            results = []
+            get = requests.get(self.url_search,headers=random_user_agent())
+            if get.status_code == 200:
+                soup = BeautifulSoup(get.content,'html.parser')
+                for dp,up in zip(
+                    soup.find_all('a',{'class':'post-thumb'}),
+                    soup.find_all('div',{'class':'post-date'})
+                ):
+                    try:
+                        results.append({
+                            'url':dp['href'],
+                            'img':dp.noscript.img['src'],
+                            'title':dp['title'],
+                            'upload':up.text,})
+                    except:pass
+                return {f'search -> {self.query}':results}
+            else:return f'Error code {get.status_code}'
+        if type == 'category':
+            return json.dumps(category(),indent=2)
+        elif type == 'search':
+            return json.dumps(search(),indent=2)
+        else:
+            return f'Invalid type {type}'
+
+class SourceForge:
+    def __init__(self,query:str) -> str:
+        self.query = quote_plus(query);
+        self.urlqr = 'https://sourceforge.net/%s/?q=%s&page=%s'
+    
+    def search(self,page=1,view='Commercial',pause=0.5):
+        """
+        page : str/int -> page content
+        view : str -> result   'commercial'  or  'open source'
+        pause : float/int -> timeout
+        """
+        def get_request():
+            if view.lower() == 'commercial':
+                return requests.get(self.urlqr%('software',self.query,page),headers=random_user_agent())
+            elif view.lower() == 'open source':
+                return requests.get(self.urlqr%('directory',self.query,page),headers=random_user_agent())
+            else:
+                return f'Invalid view -> {view}'
+
+        def results(content):
+            data = []
+            soup = BeautifulSoup(content,'html.parser')
+            for url,dec,im in zip(
+                soup.find_all('a',{'class':'result-heading-title'}),
+                soup.find_all('div',{'class':'description'}),
+                soup.find_all('div',{'class':'result-heading'})):
+                timeout(pause)
+                try:
+                    if url['href'][0] == '/':
+                        new = 'https://sourceforge.net'+url['href']
+                    else:
+                        new = url['href']
+                    data.append({
+                        'title':url.h3.text.title(),
+                        'url':new,
+                        'icon':'https:'+im.a.img['src'],
+                        'decription':dec.text.replace('\n','').replace(' '*5,' ').strip('  '),
+                        })
+                except:pass
+            return data;
+
+        if get_request().status_code == 200:
+            self.data = results(get_request().content)
+            #results
+            return json.dumps({f'{self.query} -> {view}':self.data},indent=2)
+        else:
+            return f'Error code {get_request().status_code}'
