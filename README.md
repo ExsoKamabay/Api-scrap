@@ -20,6 +20,8 @@ pip install kmy-scrap
 
 **`Example`**
 
+```note❗: for google query search there is a problem, sometimes it does not display results.```
+
 ```python 
 #import package
 import kmy_scrap
