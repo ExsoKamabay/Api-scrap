@@ -20,8 +20,6 @@ pip install kmy-scrap
 
 **`Example`**
 
-```note❗: for google query search there is a problem, sometimes it does not display results.```
-
 ```python 
 #import package
 import kmy_scrap
@@ -54,6 +52,8 @@ print(loads(google_search))
 print(loads(google_image))
 print(loads(google_video))
 ```
+``note❗`` ```for google query search there is a problem, sometimes it does not display results.```
+
 ```results``` ➡️ [google_search](response/google.search_query(start=1,stop=10).json) ➡️ [google_image](response/google.search_image(start=1,related_results=True).json)  ➡️  [google_video](response/google.search_video(max_search=10).json)
 
 ```python
