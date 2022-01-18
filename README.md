@@ -71,6 +71,74 @@ print(loads(searches_github))
 ```results``` ➡️ [search_github](response/github.search(page=2).json) ➡️ [searches_github](response/github.searches(page=2).json)
 <hr>
 
+```python
+# kmy_scrap
+'''
+random_user_agent -> (function)
+
+list_category_OceanOfGame -> (function)
+
+Github -> (class)
+    |-> __init__(self,query:str) -> str:
+    |-> total_results -> (@property)
+    |-> search -> (method)
+    |-> searches -> (method)
+
+Google -> (class)
+    |-> __init__(self,query:str) -> str:
+    |-> get_content -> (method)
+    |-> search_image -> (method)
+    |-> search_query -> (method)
+    |-> search_video -> (method)
+    
+Search_App_Mod -> (class)
+    |-> __init__(self,query:str) -> str:
+    |-> happymod -> (method)
+    |-> rexdl -> (method)
+    |-> ocean_of_game -> (method)
+
+SourceForge -> (class)
+    |-> __init__(self,query:str) -> str:
+    |-> search -> (method)
+'''
+from kmy_scrap import *
+# Parameters
+Github(query:str).search(page:int)
+Github(query:str).searches(page:int)
+
+Google(query:str).get_content(url:str)
+Google(query:str).search_video(max_search:int)
+Google(query:str).search_image
+    (
+      start:int,
+      related_results:bool,
+      # filter result
+      orientation:str, # value : portrait,landscape,square
+      anim:str, # value : yes / no
+      face:str, # value : yes / no
+      size:str, # value : small,medium,large,wallpaper
+      color:str, # value : red,orange,yellow,green,teal,purple,pink,brown,gray,white,black
+      hl:str, # language
+      cr:str, # country
+                      )
+Google(query:str).search_query
+    (
+      start:int, # start search
+      stop:int, # end search
+      lang:str, # language
+      country:str, # country
+                          )
+                                                    
+Search_App_Mod(query:str).happymod()
+Search_App_Mod(query:str).rexdl(page:int)
+Search_App_Mod(query:str).ocean_of_game
+    (
+      type:str, # value : category / search
+      page:int,
+             )
+```
+<hr>
+
 # ```Update```
 
 - ```17-01-2022``` 
