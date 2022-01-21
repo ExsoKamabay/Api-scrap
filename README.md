@@ -17,6 +17,7 @@
 # download from pip
 pip install kmy-scrap
 ```
+[https://pypi.org/project/kmy-scrap/](https://pypi.org/project/kmy-scrap/)
 
 **`Example`**
 
