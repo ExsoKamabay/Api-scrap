@@ -15,7 +15,7 @@ def random_user_agent():
         'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) AppleWebKit/601.3.9 (KHTML, like Gecko) Version/9.0.2 Safari/601.3.9',
         'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36',
     ))}
-    
+
 
 def list_category_OceanOfGame():
     get = requests.get('http://oceanofgames.com/',headers=random_user_agent())
@@ -27,9 +27,6 @@ def list_category_OceanOfGame():
         for i,v in enumerate(rst):
             print(i+1,v.lower())
     else:print(f'Error code {get.status_code}')
-
-
-
 
 
 class Github:
@@ -62,7 +59,9 @@ class Github:
                     self.soup.find_all('span',{'itemprop':'programmingLanguage'}),
                     self.soup.find_all('relative-time',{'class':'no-wrap'}),
                     ):
+                    self.abstr = url['href'].replace('/',' ').split()
                     self.lst.append({
+                        'name':self.abstr[-1],
                         'url':f"https://github.com{url['href']}",
                         'star':star.text.replace(' ','').strip('\n').replace('\n',' '),
                         'upload':up.text,
@@ -93,7 +92,6 @@ class Google:
         self.urlp = f"https://www.picsearch.com/index.cgi?q={self.query}"
         self.urlq = f"https://www.google.com/search?q={self.query}&safe=off"#&hl=%(language)s&cr=%(country)s&num=%(stop)s"%vars()
         self.urli = f"https://www.google.com/search?q={self.query}&tbm=isch"
-
 
     def get_content(self,url) -> str:
         """Mengambil konten alamat url"""
