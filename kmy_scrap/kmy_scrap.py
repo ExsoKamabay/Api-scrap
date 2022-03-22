@@ -212,7 +212,7 @@ class Search_App_Mod:
 
     def happymod(self) -> None:
         self.results = []
-        try:self.gets = requests.get(f'https://happymod.com/search.html?q={self.query}',params=random_user_agent())
+        try:self.gets = requests.get(f'https://happymod.com/search.html?q={self.query}',headers=random_user_agent())
         except:return "Check Your Internet Connection!"
         self.urls = BeautifulSoup(self.gets.content,'html.parser').find_all('a',{'class':'pdt-app-img'})
         for i in self.urls:
@@ -247,7 +247,7 @@ class Search_App_Mod:
             results = [];
             for i in range(page):
                 for u in BeautifulSoup(requests.get(f"https://rexdl.com/page/{i+1}/?s={self.query}",
-                    params=random_user_agent()).content,'html.parser').find_all('h2',{'class':'post-title'}):
+                    headers=random_user_agent()).content,'html.parser').find_all('h2',{'class':'post-title'}):
                     results.append({'url':u.a['href'],'title':u.a['title']})
             return results;
         for i in search_url():
