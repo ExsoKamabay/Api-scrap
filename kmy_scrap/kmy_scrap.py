@@ -210,36 +210,60 @@ class Search_App_Mod:
     def __init__(self,query:str) -> str:
         self.query = quote_plus(query);
 
-    def happymod(self) -> None:
-        self.results = []
-        try:self.gets = requests.get(f'https://happymod.com/search.html?q={self.query}',headers=random_user_agent())
-        except:return "Check Your Internet Connection!"
-        self.urls = BeautifulSoup(self.gets.content,'html.parser').find_all('a',{'class':'pdt-app-img'})
-        for i in self.urls:
-            self.ipk = i['href'].strip('/')
-            self.rpk = self.ipk.find('/')
-            self.url = BeautifulSoup(
-                requests.get(f"https://happymod.com{i['href']}",
-                headers=random_user_agent()).content,'html.parser');
-            for name,info,ftur,img,link in zip(
-                self.url.find_all('div',{'class':'new-div-box new-pdt-bg-box'}),
-                self.url.find_all('ul',{'class':'new-pdt-ul clearfix'}),
-                self.url.find_all('div',{'class':'new-pdt-msg-box'}),
-                self.url.find_all('img',{'class':'lazy'}),
-                self.url.find_all('a',{'class':'download-btn'})
-                ):
-                self.results.append([{
-                    "App":i['title'],
-                    'app_info':[{
-                        'name':name.h3.text,
-                        'icon':img['data-original'],
-                        'package':self.ipk[self.rpk:].strip('/'),
-                        'detail':info.text.replace('-','').strip('\n').replace('\n',','),
-                        'download':'https://happymod.com'+link['href'],
-                        'decription':ftur.p.text.replace('\t','').replace('\n',' ').replace('\u221a','').replace('\r','')
-                    }]
-                    }])
-        return json.dumps({"Results":self.results},indent=1)
+    def happymod(self,search_mode='fast') -> str:
+        'search_mode : "slow" or "fast"'
+        def pencarian_lambat():
+            self.results = []
+            try:self.gets = requests.get(f'https://happymod.com/search.html?q={self.query}',params=random_user_agent())
+            except:return "Check Your Internet Connection!"
+            self.urls = BeautifulSoup(self.gets.content,'html.parser').find_all('a',{'class':'pdt-app-img'})
+            for i in self.urls:
+                self.ipk = i['href'].strip('/')
+                self.rpk = self.ipk.find('/')
+                self.url = BeautifulSoup(
+                    requests.get(f"https://happymod.com{i['href']}",
+                    headers=random_user_agent()).content,'html.parser');
+                for name,info,ftur,img,link in zip(
+                    self.url.find_all('div',{'class':'new-div-box new-pdt-bg-box'}),
+                    self.url.find_all('ul',{'class':'new-pdt-ul clearfix'}),
+                    self.url.find_all('div',{'class':'new-pdt-msg-box'}),
+                    self.url.find_all('img',{'class':'lazy'}),
+                    self.url.find_all('a',{'class':'download-btn'})
+                    ):
+                    self.results.append([{
+                        "App":i['title'],
+                        'app_info':[{
+                            'name':name.h3.text,
+                            'icon':img['data-original'],
+                            'package':self.ipk[self.rpk:].strip('/'),
+                            'detail':info.text.replace('-','').strip('\n').replace('\n',','),
+                            'download':'https://happymod.com'+link['href'],
+                            'decription':ftur.p.text.replace('\t','').replace('\n',' ').replace('\u221a','').replace('\r','')
+                        }]
+                        }])
+            return json.dumps({"Results":self.results},indent=1)
+        def pencarian_cepat():
+            self.results = []
+            try:self.gets = requests.get(f'https://happymod.com/search.html?q={self.query}',headers=random_user_agent())
+            except:return "Check Your Internet Connection!"
+            self.soup = BeautifulSoup(self.gets.content,'html.parser')
+            for i,ratting,icon in zip(
+                self.soup.find_all('h3',{'class':'pdt-app-h3'}),
+                self.soup.find_all('span',{'class':'a-search-num'}),
+                self.soup.find_all('a',{'class':'pdt-app-img'})):
+                package = icon['href'].strip('/')
+                number = package.find('/')
+                data = {
+                    'url':'https://happymod.com'+i.a['href'],
+                    'icon':icon.img['data-original'],
+                    'title':i.a.text.title(),
+                    'ratting':ratting.text,
+                    'package':package[number:].strip('/')
+                };self.results.append(data)
+            return json.dumps(self.results,indent=1)
+        if search_mode == 'slow':return pencarian_lambat();
+        elif search_mode == 'fast':return pencarian_cepat();
+        else:return 'invalid mode!';
     
     def rexdl(self,page:int) -> int:
         self.ls_results = []
@@ -247,7 +271,7 @@ class Search_App_Mod:
             results = [];
             for i in range(page):
                 for u in BeautifulSoup(requests.get(f"https://rexdl.com/page/{i+1}/?s={self.query}",
-                    headers=random_user_agent()).content,'html.parser').find_all('h2',{'class':'post-title'}):
+                    params=random_user_agent()).content,'html.parser').find_all('h2',{'class':'post-title'}):
                     results.append({'url':u.a['href'],'title':u.a['title']})
             return results;
         for i in search_url():
@@ -379,3 +403,4 @@ class SourceForge:
             return json.dumps({f'{self.query} -> {view}':self.data},indent=2)
         else:
             return f'Error code {get_request().status_code}'
+
