@@ -133,6 +133,6 @@ add the ```ocean_of_game``` method to the ```Search_App_Mod``` class, a new ```S
 
 - ```29-04-2022``` 
 
-added option options in happymod search
+added search mode to happymod
 
 results [slow](response/search_app_mod.happymod().json),  [fast](response/happymod_fast_m.json)
