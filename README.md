@@ -116,7 +116,7 @@ Google(query:str).search_query
       country:str, # country
                           )
                                                     
-Search_App_Mod(query:str).happymod()
+Search_App_Mod(query:str).happymod(search_mode='fast') # mode option 'fast' or 'slow'
 Search_App_Mod(query:str).rexdl(page:int)
 Search_App_Mod(query:str).ocean_of_game
     (
