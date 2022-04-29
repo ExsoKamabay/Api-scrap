@@ -135,5 +135,4 @@ add the ```ocean_of_game``` method to the ```Search_App_Mod``` class, a new ```S
 
 added option options in happymod search
 
-results [slow](response/search_app_mod.happymod().json)
-results [fast](response/happymod_fast_m.json)
+results [slow](response/search_app_mod.happymod().json),  [fast](response/happymod_fast_m.json)
