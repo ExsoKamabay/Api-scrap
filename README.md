@@ -130,3 +130,9 @@ Search_App_Mod(query:str).ocean_of_game
 - ```17-01-2022``` 
 
 add the ```ocean_of_game``` method to the ```Search_App_Mod``` class, a new ```SourceForge``` class with the ```search``` method to search.
+
+- ```29-04-2022``` 
+
+added option options in happymod search
+
+results [slow](response/search_app_mod.happymod().json)
