@@ -1,5 +1,5 @@
 {
   "host":"127.0.0.1",
   "port":8080,
-  "messages":"hello world",
+  "messages":"hello world"
 }
