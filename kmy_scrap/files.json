@@ -1,5 +1,10 @@
 {
-  "host":"0.tcp.ap.ngrok.io",
-  "port":19767,
-  "messages":"hello world"
+  "server":{
+    "host":"127.0.0.1",
+    "port":8080
+  },
+  "client":{
+    "host":"127.0.0.1",
+    "port":8080
+  }
 }
