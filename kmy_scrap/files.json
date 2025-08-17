@@ -1,7 +1,7 @@
 {
   "server":{
     "host":"localhost",
-    "port":4040
+    "port":8080
   },
   "client":{
     "host":"0.tcp.ap.ngrok.io"
